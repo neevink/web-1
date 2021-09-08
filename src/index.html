@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Kirill Neevin">
+        <title>Неевин Кирилл</title>
+        <link rel="icon" href="icon.ico">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="header">
+            Неевин Кирилл P3213, выриант: 13201
+        </header>
+
+        <form action="php/index.php" method="get" onsubmit="return validateForm()">
+            <table border="solid">
+                <tr>
+                    <td>
+                        X (-3, 5)
+                    </td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>
+                                    <input type="radio" name="x" id="x-3" value="-3" required>
+                                </td>
+                                <td>
+                                    <label for="x-3">-3</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="radio" name="x" id="x-2" value="-2">
+                                </td>
+                                <td>
+                                    <label for="x-2">-2</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="radio" name="x" id="x-1" value="-1">
+                                </td>
+                                <td>
+                                    <label for="x-1">-1</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="radio" name="x" id="x0" value="0">
+                                </td>
+                                <td>
+                                    <label for="x0">0</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="radio" name="x" id="x1" value="1">
+                                </td>
+                                <td>
+                                    <label for="x1">1</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="radio" name="x" id="x2" value="2">
+                                </td>
+                                <td>
+                                    <label for="x2">2</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="radio" name="x" id="x3" value="3">
+                                </td>
+                                <td>
+                                    <label for="x3">3</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="radio" name="x" id="x4" value="4">
+                                </td>
+                                <td>
+                                    <label for="x4">4</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="radio" name="x" id="x5" value="5">
+                                </td>
+                                <td>
+                                    <label for="x5">5</label>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="y">Y (-5, 5)</label>
+                    </td>
+                    <td>
+                        <input type="text" name="y" id="y" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="r">R (1, 4)</label>
+                    </td>
+                    <td>
+                        <input type="text" name="r" id="r" required>
+                    </td>
+                </tr>
+            </table>
+            <!--
+            <input type="submit" onclick="submitForm()" value="Отправить">
+            -->
+            <input type="reset" value="Сбросить">
+            <input type="submit" value="отправить">
+
+        </form>
+
+        <!-- Лень качать, поэтому буду загружать из инета -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
