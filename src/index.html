@@ -4,22 +4,27 @@
         <meta charset="utf-8">
         <meta name="author" content="Kirill Neevin">
         <title>Неевин Кирилл</title>
-        <link rel="icon" href="icon.ico">
+        <link rel="icon" href="img/icon.ico">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <header class="header">
+        <header id="header">
             Неевин Кирилл P3213, выриант: 13201
         </header>
 
-        <form action="php/index.php" method="get" onsubmit="return validateForm()">
-            <table border="solid">
+        <form id="main-form" action="php/index.php" method="get" onsubmit="return validateForm()">
+            <img id="corgi" src="img/corgi.jpg" alt="*тут картинка с корги*">
+            <table id="main-table">
+                <tr>
+                    <th>Переменная</th>
+                    <th>Ввод/Вывод</th>
+                </tr>
                 <tr>
                     <td>
                         X (-3, 5)
                     </td>
                     <td>
-                        <table>
+                        <table class="inner-table">
                             <tr>
                                 <td>
                                     <input type="radio" name="x" id="x-3" value="-3" required>
@@ -112,12 +117,10 @@
                     </td>
                 </tr>
             </table>
-            <!--
-            <input type="submit" onclick="submitForm()" value="Отправить">
-            -->
-            <input type="reset" value="Сбросить">
-            <input type="submit" value="отправить">
-
+            <div class="input-pannel">
+                <input type="reset" value="Сбросить">
+                <input type="submit" value="отправить">
+            </div>
         </form>
 
         <!-- Лень качать, поэтому буду загружать из инета -->

@@ -1,13 +1,51 @@
-
 body{
     background-color: #f5f0e1;
     color: #1e3d59;
     font-size: 18px;
 }
 
-.header{
+#header{
     text-align: center;
     font-family: sans-serif;
     font-size: 35px;
     color: #ff6e40;
+
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#header::before, #header::after{
+    content: "😎";
+}
+
+#header:hover{
+    text-decoration: underline 5px;
+}
+
+#main-table{
+    margin: auto;
+
+}
+
+#main-table .inner-table{
+    margin-left: 45%;
+
+}
+
+table.wrapper{
+    width: 100%;
+}
+
+#corgi{
+    width: 150px;
+}
+
+#main-form{
+    width: 100%;
+    text-align: center;
+}
+
+.input-pannel *{
+    margin-top: 20px;
+    font-size: 20px;
 }

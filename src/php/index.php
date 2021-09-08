@@ -82,7 +82,7 @@ foreach ($saves as &$element) {
 echo "</table>";
 
 
-echo "Текущая дата: " . date("d M Y, H:i:s");
+echo "Текущая дата: " . date("d M Y, H:i:s") . "<br>";
 echo "Время работы скрипта: " . (microtime(true) - $start) . " мс";
 
 $reset = $_GET['reset'] ?? 'no';
