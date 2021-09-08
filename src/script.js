@@ -8,12 +8,10 @@ function isNumeric(val) {
 
 function isInt(val){
     return /^-?[0-9]{1,10}$/.test(val);
-
 }
 
 function isFloat(val){
     return /^-?[0-9]{0,6}(.|,)[0-9]{0,5}$/.test(val);
-
 }
 
 function validateX() {
@@ -62,17 +60,7 @@ function validateForm(){
         return false;
     }
     else{
-        alert('x = ' + x + ', y = ' + y + ',r = ' + r);
+        // alert('x = ' + x + ', y = ' + y + ',r = ' + r);
         return true;
-    }}
-
-function submitForm(form) {
-    let isValid = validateForm();
-
-    if(isValid){
-        form.submit();
-    }
-    else{
-        form.preventDefault();
     }
 }
