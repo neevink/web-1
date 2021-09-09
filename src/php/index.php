@@ -26,8 +26,7 @@ function check_hit($x, $y, $r): bool
         return false;
     }
     else if($x >= 0 and $y < 0){ // 2
-        echo 123;
-        if($x * $x + $y * $y <= $r * $r){
+        if($x * $x + $y * $y <= $r * $r / 4){
             return true;
         }
         return false;
