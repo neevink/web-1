@@ -40,12 +40,28 @@ table.wrapper{
     width: 150px;
 }
 
-#main-form{
+#main-form, .center-wrapper{
     width: 100%;
     text-align: center;
+}
+
+.center-wrapper{
+    width: 100%;
+    text-align: center;
+}
+
+.inner{
+    width: 50%;
+    margin: 30px auto;
 }
 
 .input-pannel *{
     margin-top: 20px;
     font-size: 20px;
+}
+
+p#info-pannel{
+    border: 3px solid #ff6e40;
+    margin: 0 20%;
+    padding: 10px;
 }
